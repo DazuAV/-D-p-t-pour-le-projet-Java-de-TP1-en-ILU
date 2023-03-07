@@ -4,21 +4,24 @@ public class Romain {
 
 	private String nom;
 	private int force;
+	
+	
+	
 	public Romain(String nom, int force) {
-	this.nom = nom;
-	this.force = force;
+		this.nom = nom;
+		this.force = force;
 	}
 	
 	public String getNom() {
-	return nom;
+	   return nom;
 	}
 	
 	public void parler(String texte) {
-	System.out.println(prendreParole() + "« " + texte + "»");
+	   System.out.println(prendreParole() + "« " + texte + "»");
 	}
 	
 	private String prendreParole() {
-	return "Le romain " + nom + " : ";
+	   return "Le romain " + nom + " : ";
 	}
 	
 	public void recevoirCoup(int forceCoup) {
@@ -31,6 +34,14 @@ public class Romain {
 	
 	}
 	
-}
+	public static void main(String[] args) {
+		Romain antivirus = new Romain("Antivirus",2);
+		antivirus.parler("Des Gaulois !!!");
+		antivirus.recevoirCoup(5);
+	}
+
+	}
+	
+
 
 
