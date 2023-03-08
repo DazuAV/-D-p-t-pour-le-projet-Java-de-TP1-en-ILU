@@ -6,16 +6,17 @@ import personnages.Romain;
 public class Scenario {
 
 	public static void main(String[] args) {
-		Gaulois asterix= new Gaulois("Asterix",10);
-		Romain minus= new Romain("Minus",2);
-		asterix.parler("Bonjour à tous");
+		Gaulois asterix= new Gaulois("Asterix",5);
+		Romain minus= new Romain("Minus",5);
+		asterix.parler("Bonjour Ã  tous");
 		minus.parler("UN GAU... UN GAUGAU...");
 		asterix.frapper(minus);
-		minus.recevoirCoup(5);
+		asterix.frapper(minus);
 		asterix.frapper(minus);
 		minus.recevoirCoup(5);
-		asterix.frapper(minus);
-		minus.recevoirCoup(0);
+		
+
+		
 	}
 
 }
