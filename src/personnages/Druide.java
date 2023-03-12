@@ -1,6 +1,8 @@
 package personnages;
 import java.util.Random;
+
 import personnages.Gaulois;
+
 
 
 public class Druide {
@@ -15,6 +17,7 @@ this.nom = nom;
 this.effetpotion=1;
 this.effetPotionMin = effetPotionMin;
 this.effetPotionMax = effetPotionMax;
+
 parler("Bonjour, je suis le druide " + nom + " et ma potion peut aller d'une force " + effetPotionMin + " à "
 + effetPotionMax + ".");
 }
@@ -33,6 +36,7 @@ public void preparerPotion(int effetPotionMin,int effetPotionMax) {
 	}
 }
 
+
 public void booster(Gaulois gaulois) {
 	
 	if((gaulois.getNom()).equals("Obelix")) {
@@ -41,8 +45,10 @@ public void booster(Gaulois gaulois) {
 	
 }
 
+
 public void parler(String texte) {
 System.out.println(prendreParole() + "< " + texte + ">");
+
 }
 
 private String prendreParole() {
