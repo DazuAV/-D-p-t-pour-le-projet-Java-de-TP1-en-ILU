@@ -25,7 +25,7 @@ public class Gaulois {
 	
 
 	public void boirePotion(int potion) {
-		System.out.println(" Merci Druide, je sens que ma force est" +  potion  + "fois décuplée");
+		System.out.println(" Merci Druide, je sens que ma force est" +  potion  + "fois decuple");
 
 		effetPotion=potion;
 		
@@ -37,7 +37,7 @@ public class Gaulois {
 
 	public void frapper(Romain romain) {
 
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la m�choire de " + romain.getNom());
 
 		romain.recevoirCoup(effetPotion*(force / 3));
 	}
