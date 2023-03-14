@@ -1,11 +1,12 @@
 package personnages;
 import personnages.Equipement;
 
+///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
+
 public class Romain {
-	private String texte;
 	private String nom;
 	private int force;
-	private Equipement equipements[];
+	private Equipement []equipements;
 	private int nbEquipement=0;
 	
 	
@@ -58,11 +59,11 @@ public class Romain {
 		// }
 		switch (force) {
 		case 0:
-		parler("Aïe");
-		default:
-		equipementEjecte = ejecterEquipement();
-		parler("J'abandonne...");
-		break;
+			parler("Aïe");
+			default:
+				equipementEjecte = ejecterEquipement();
+				parler("J'abandonne...");
+				break;
 		}
 		// post condition la force a diminuée
 		assert force < oldForce;
