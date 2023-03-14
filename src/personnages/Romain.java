@@ -8,6 +8,7 @@ public class Romain {
 	
 	
 	public Romain(String nom, int force) {
+		assert force>0:"la force d’un Romain est stric. positif !";
 		this.nom = nom;
 		this.force = force;
 	}
@@ -25,19 +26,20 @@ public class Romain {
 	}
 	
 	public void recevoirCoup(int forceCoup) {
+	assert force>0:"la force d’un Romain est positive";
+	int forceav=force;
 	force -= forceCoup;
 	if (force > 0) {
 	parler("AÃ¯e");
 	} else {
 	parler("J'abandonne...");
 	}
-	
+	assert force<forceav:"la force d’un Romain a diminué";
 	}
 	
 	public static void main(String[] args) {
-		Romain antivirus = new Romain("Antivirus",2);
-		antivirus.parler("Des Gaulois !!!");
-		antivirus.recevoirCoup(5);
+		Romain antivirus = new Romain("Antivirus",6);
+	
 	}
 
 	}
